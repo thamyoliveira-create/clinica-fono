@@ -1,272 +1,37 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f5f3ee" />
-    <meta
-      name="description"
-      content="Clínica Fala Viva — fonoaudiologia com escuta atenta, planos possíveis e cuidado individual."
-    />
-    <title>Fala Viva — Fonoaudiologia com espaço para cada voz</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preload" as="image" href="dist/hero.png" />
-    <link rel="stylesheet" href="dist/styles.css" />
-    <script src="dist/script.js" defer></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-
-    <header class="site-header" data-header>
-      <div class="nav-shell">
-        <a class="brand" href="#inicio" aria-label="Fala Viva, início">
-          <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.5 8.5h15.2c4.3 0 7.8 3.5 7.8 7.8v2.4c0 4.3-3.5 7.8-7.8 7.8H18l-6.9 5.2.9-5.2H9.5a7.8 7.8 0 0 1-7.8-7.8v-2.4c0-4.3 3.5-7.8 7.8-7.8Z" fill="currentColor" />
-              <path d="M11.4 16.4c1.7-1.8 3.6-1.8 5.5 0 1.7 1.7 3.4 1.7 5.1 0 1.8-1.8 3.8-1.8 5.6 0" stroke="#F5F3EE" stroke-width="2.2" stroke-linecap="round" />
-            </svg>
-          </span>
-          <span class="brand-type">
-            <strong>Fala Viva</strong>
-            <small>fonoaudiologia</small>
-          </span>
-        </a>
-
-        <nav class="desktop-nav" aria-label="Navegação principal">
-          <a href="#clinica">A clínica</a>
-          <a href="#atendimento">Áreas de cuidado</a>
-          <a href="#duvidas">Dúvidas</a>
-        </nav>
-
-        <a class="button button-small button-coral desktop-cta" href="#agendamento">
-          Agendar conversa <span aria-hidden="true">↗</span>
-        </a>
-
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
-          <span class="sr-only">Abrir menu</span>
-          <span></span><span></span>
-        </button>
-      </div>
-
-      <nav class="mobile-nav" id="mobile-nav" aria-label="Navegação mobile" hidden>
-        <a href="#clinica">A clínica <span aria-hidden="true">↗</span></a>
-        <a href="#atendimento">Áreas de cuidado <span aria-hidden="true">↗</span></a>
-        <a href="#duvidas">Dúvidas <span aria-hidden="true">↗</span></a>
-        <a class="button button-coral" href="#agendamento">Agendar conversa <span aria-hidden="true">↗</span></a>
-      </nav>
-    </header>
-
-    <main id="conteudo">
-      <section class="hero section-shell" id="inicio">
-        <div class="hero-copy reveal">
-          <p class="eyebrow"><span class="eyebrow-dot"></span> Comunicação com mais presença</p>
-          <h1>Seu jeito de se comunicar merece <em>espaço.</em></h1>
-          <p class="hero-lede">
-            Um cuidado fonoaudiológico próximo, individual e construído a partir da história de cada pessoa.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-dark" href="#agendamento">Quero conversar <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="#clinica">Conhecer a clínica <span aria-hidden="true">↓</span></a>
-          </div>
-          <div class="hero-notes" aria-label="Princípios da clínica">
-            <div class="hero-note">
-              <span>01</span>
-              <p>Escuta antes da pressa.</p>
-            </div>
-            <div class="hero-note">
-              <span>02</span>
-              <p>Estratégias que cabem na rotina.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-art reveal reveal-delay" aria-label="Sessão de fonoaudiologia">
-          <div class="hero-image-frame">
-            <img src="dist/hero.png" alt="Fonoaudióloga conversa com uma criança em uma sala clara e acolhedora." />
-            <div class="image-stamp">
-              <span class="stamp-ring" aria-hidden="true">✦</span>
-              <span>cuidado<br />que escuta</span>
-            </div>
-          </div>
-          <div class="hero-art-caption">
-            <span>Fala Viva / 01</span>
-            <span>Um espaço para participar do próprio jeito.</span>
-          </div>
-        </div>
-      </section>
-
-      <div class="marquee-band" aria-label="Fonoaudiologia com escuta e parceria">
-        <div class="marquee-track">
-          <span>escuta</span><i>✦</i><span>presença</span><i>✦</i><span>comunicação</span><i>✦</i><span>parceria</span><i>✦</i>
-          <span>escuta</span><i>✦</i><span>presença</span><i>✦</i><span>comunicação</span><i>✦</i><span>parceria</span><i>✦</i>
-        </div>
-      </div>
-
-      <section class="intro section-shell" id="clinica">
-        <div class="section-kicker reveal">A clínica <span>01 — 03</span></div>
-        <div class="intro-content">
-          <div class="intro-title reveal">
-            <h2>Um cuidado que começa pela <em>escuta.</em></h2>
-          </div>
-          <div class="intro-text reveal reveal-delay">
-            <p class="large-copy">
-              Antes de pensar em metas, a gente entende o que a comunicação precisa tornar possível na vida real.
-            </p>
-            <p>
-              A Fala Viva foi pensada para acolher diferentes formas de falar, ouvir, interagir e se expressar. O acompanhamento se organiza com clareza, respeitando o tempo de cada pessoa e valorizando suas conquistas cotidianas.
-            </p>
-            <div class="pill-row" aria-label="Características do atendimento">
-              <span>escuta atenta</span><span>plano individual</span><span>parceria com a família</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="approach section-shell section-tint">
-        <div class="approach-visual reveal">
-          <div class="circle-illustration" aria-hidden="true">
-            <span class="circle-line circle-line-one"></span>
-            <span class="circle-line circle-line-two"></span>
-            <span class="circle-word">junto</span>
-            <span class="circle-number">02</span>
-          </div>
-          <p class="visual-note">O plano se constrói com você.</p>
-        </div>
-        <div class="approach-copy reveal reveal-delay">
-          <div class="section-kicker">Como começa <span>02 — 03</span></div>
-          <h2>Um primeiro encontro para olhar o todo.</h2>
-          <p>
-            A conversa inicial abre espaço para conhecer a demanda, observar contextos e combinar os próximos passos com tranquilidade.
-          </p>
-          <ol class="steps-list">
-            <li><span>01</span><div><strong>Conversar</strong><p>O que trouxe você até aqui?</p></div></li>
-            <li><span>02</span><div><strong>Observar</strong><p>Quais situações pedem mais suporte?</p></div></li>
-            <li><span>03</span><div><strong>Construir</strong><p>Quais caminhos fazem sentido agora?</p></div></li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="care section-shell" id="atendimento">
-        <div class="section-kicker reveal">Áreas de cuidado <span>03 — 03</span></div>
-        <div class="care-heading reveal">
-          <h2>Atendimento com técnica, <em>humanidade</em> e contexto.</h2>
-          <p>As frentes abaixo podem ser combinadas de acordo com a necessidade apresentada na avaliação.</p>
-        </div>
-        <div class="care-grid">
-          <article class="care-card care-card-main reveal">
-            <div class="card-topline"><span>01</span><span aria-hidden="true">↗</span></div>
-            <h3>Fala<br />e linguagem</h3>
-            <p>Desenvolvimento, compreensão e expressão para tornar as trocas mais possíveis.</p>
-            <span class="card-orb orb-blue" aria-hidden="true"></span>
-          </article>
-          <article class="care-card care-card-coral reveal reveal-delay-short">
-            <div class="card-topline"><span>02</span><span aria-hidden="true">↗</span></div>
-            <h3>Voz<br />e fluência</h3>
-            <p>Um espaço para cuidar da voz, do ritmo e da confiança ao se comunicar.</p>
-            <span class="card-orb orb-coral" aria-hidden="true"></span>
-          </article>
-          <article class="care-card care-card-dark reveal reveal-delay">
-            <div class="card-topline"><span>03</span><span aria-hidden="true">↗</span></div>
-            <h3>Comunicação<br />no cotidiano</h3>
-            <p>Estratégias funcionais para ampliar participação em casa, na escola e no trabalho.</p>
-            <span class="card-orb orb-sage" aria-hidden="true"></span>
-          </article>
-        </div>
-      </section>
-
-      <section class="quote-section">
-        <div class="quote-inner section-shell reveal">
-          <span class="quote-mark" aria-hidden="true">“</span>
-          <blockquote>A comunicação não precisa caber em um único jeito.</blockquote>
-          <div class="quote-footer"><span>Fala Viva</span><span>fonoaudiologia</span></div>
-        </div>
-      </section>
-
-      <section class="values section-shell">
-        <div class="values-copy reveal">
-          <div class="section-kicker">Nosso jeito de cuidar</div>
-          <h2>Para que cada pessoa possa participar do próprio <em>jeito.</em></h2>
-          <p>
-            O atendimento considera preferências, apoios necessários, ambiente e objetivos que tenham significado para quem está sendo acompanhado.
-          </p>
-          <a class="text-link" href="#agendamento">Falar com a clínica <span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="values-list reveal reveal-delay">
-          <div class="value-item"><span class="value-icon">✳</span><div><strong>Respeito ao ritmo</strong><p>Tempo para observar, experimentar e avançar com segurança.</p></div></div>
-          <div class="value-item"><span class="value-icon">◌</span><div><strong>Clareza no caminho</strong><p>Objetivos compartilhados e explicados em linguagem simples.</p></div></div>
-          <div class="value-item"><span class="value-icon">⌁</span><div><strong>Vida real no centro</strong><p>O que é trabalhado precisa encontrar lugar fora da sala.</p></div></div>
-        </div>
-      </section>
-
-      <section class="faq section-shell" id="duvidas">
-        <div class="faq-intro reveal">
-          <div class="section-kicker">Dúvidas frequentes</div>
-          <h2>Antes de marcar, você pode <em>perguntar.</em></h2>
-          <p>Se a sua dúvida não estiver aqui, envie uma mensagem e conversamos.</p>
-        </div>
-        <div class="faq-list reveal reveal-delay">
-          <details open>
-            <summary>Como funciona a primeira conversa?<span aria-hidden="true">+</span></summary>
-            <p>É um momento para entender o motivo da busca, conhecer a rotina e decidir juntos se a avaliação fonoaudiológica é o próximo passo.</p>
-          </details>
-          <details>
-            <summary>O atendimento é indicado para qual idade?<span aria-hidden="true">+</span></summary>
-            <p>A indicação depende da demanda. No primeiro contato, a clínica pode orientar sobre o formato de atendimento mais adequado para cada caso.</p>
-          </details>
-          <details>
-            <summary>A família participa do acompanhamento?<span aria-hidden="true">+</span></summary>
-            <p>Quando fizer sentido para a pessoa atendida, a família e a rede de apoio participam das orientações e da construção das estratégias.</p>
-          </details>
-          <details>
-            <summary>Como saber se devo procurar uma fonoaudióloga?<span aria-hidden="true">+</span></summary>
-            <p>Dificuldades persistentes de fala, linguagem, voz, fluência, comunicação ou alimentação podem ser conversadas com uma profissional para entender melhor a situação.</p>
-          </details>
-        </div>
-      </section>
-
-      <section class="booking section-shell" id="agendamento">
-        <div class="booking-panel reveal">
-          <div class="booking-copy">
-            <div class="section-kicker light-kicker">Primeiro passo</div>
-            <h2>Vamos conversar sobre o que você <em>procura?</em></h2>
-            <p>Conte brevemente como podemos ajudar. A clínica retorna para combinar o melhor horário.</p>
-            <div class="contact-details">
-              <div><span>WhatsApp</span><strong>Adicionar número</strong></div>
-              <div><span>Atendimento</span><strong>Presencial / on-line</strong></div>
-              <div><span>Localização</span><strong>Adicionar cidade</strong></div>
-            </div>
-          </div>
-          <form class="booking-form" data-demo-form>
-            <label for="nome">Seu nome</label>
-            <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Como podemos chamar você?" required />
-            <label for="contato">E-mail ou WhatsApp</label>
-            <input id="contato" name="contato" type="text" autocomplete="email" placeholder="Seu melhor contato" required />
-            <label for="mensagem">O que você gostaria de conversar?</label>
-            <textarea id="mensagem" name="mensagem" rows="3" placeholder="Pode escrever do seu jeito."></textarea>
-            <button class="button button-light" type="submit">Enviar pedido de contato <span aria-hidden="true">↗</span></button>
-            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
-          </form>
-        </div>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1d8fb8" />
+  <meta name="description" content="Fala Viva — fonoaudiologia com espaço para cada voz." />
+  <title>Fala Viva — Fonoaudiologia com espaço para cada voz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{--u:min(calc(100vw / 1600),calc(100vh / 860),1.6px);--frame:calc(1600 * var(--u));--display:"DM Serif Display",Georgia,serif;--body:Manrope,system-ui,sans-serif;--white:#fffdf9;--ink:#18292e;--coral:#ec967a;--sky:#1d8fb8}
+    *{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden;background:var(--sky);color:var(--white);font-family:var(--body);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}:focus-visible{outline:2px solid var(--coral);outline-offset:5px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+    .skip-link{position:fixed;z-index:10;top:12px;left:12px;padding:10px 14px;color:var(--ink);background:var(--white);transform:translateY(-150%);transition:transform .2s}.skip-link:focus{transform:translateY(0)}.viewport{position:fixed;inset:0;overflow:hidden}.bg{position:absolute;inset:0;overflow:hidden;background:var(--sky)}.bg::after{position:absolute;inset:0;background:linear-gradient(105deg,rgba(7,25,31,.72),rgba(7,25,31,.35) 40%,rgba(7,25,31,.04) 82%),linear-gradient(180deg,rgba(6,26,32,.05),rgba(8,22,27,.32));content:""}.bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.86);transform:scale(calc(1.04 + var(--scroll-progress,0)*.035))}.sound-field{position:absolute;z-index:1;inset:0;overflow:hidden;pointer-events:none}.sound-field span{position:absolute;top:5%;right:7%;width:48vw;max-width:760px;aspect-ratio:1;border:1px solid rgba(255,255,255,.25);border-radius:50%;transform:translateY(calc(var(--scroll-progress,0)*-60px)) rotate(-18deg)}.sound-field span:nth-child(2){top:14%;right:13%;width:35vw;border-color:rgba(236,150,122,.45);transform:translateY(calc(var(--scroll-progress,0)*44px)) rotate(20deg)}.sound-field span:nth-child(3){top:28%;right:22%;width:21vw;border-color:rgba(255,255,255,.2);transform:translateY(calc(var(--scroll-progress,0)*-28px))}
+    .stage{position:absolute;z-index:2;left:50%;top:0;width:var(--frame);height:100%;transform:translateX(-50%);pointer-events:none}.stage>*{pointer-events:auto}.hero{position:absolute;left:calc(46 * var(--u));top:calc(132 * var(--u));width:calc(525 * var(--u));transform:translateY(calc(var(--scroll-progress,0)*-18px))}.eyebrow{margin:0 0 calc(24 * var(--u));font-size:calc(15 * var(--u));font-weight:700;letter-spacing:calc(3.1 * var(--u));line-height:1;text-transform:uppercase}.eyebrow::before{display:inline-block;width:calc(7 * var(--u));height:calc(7 * var(--u));margin-right:calc(10 * var(--u));border-radius:50%;background:var(--coral);box-shadow:0 0 0 calc(6 * var(--u)) rgba(236,150,122,.18);content:"";vertical-align:12%}h1{max-width:calc(640 * var(--u));margin:0;color:rgba(255,255,255,.93);font-family:var(--display);font-size:calc(84 * var(--u));font-weight:400;letter-spacing:calc(.3 * var(--u));line-height:.94}h1 em{color:var(--coral);font-style:italic}.lede{max-width:calc(450 * var(--u));margin:calc(28 * var(--u)) 0 0;color:rgba(255,255,255,.79);font-size:calc(17 * var(--u));font-weight:500;letter-spacing:calc(-.15 * var(--u));line-height:1.45}.cta{display:inline-flex;align-items:center;gap:calc(18 * var(--u));min-width:calc(175 * var(--u));height:calc(47 * var(--u));margin-top:calc(34 * var(--u));padding:0 calc(25 * var(--u));border-radius:calc(5 * var(--u));color:#000;background:var(--white);font-size:calc(14 * var(--u));font-weight:700;transition:.25s ease}.cta:hover{background:#eef2f3;box-shadow:0 calc(8 * var(--u)) calc(24 * var(--u)) rgba(0,0,0,.2);transform:translateY(calc(-2 * var(--u)))}.cta span{font-size:calc(19 * var(--u))}
+    .footer{position:absolute;z-index:3;right:0;bottom:0;left:0;height:calc(342 * var(--u));overflow:hidden;border-top:1px solid rgba(255,255,255,.18);background:linear-gradient(90deg,rgba(255,255,255,.04),transparent 19%),linear-gradient(270deg,rgba(255,255,255,.05),transparent 19%),linear-gradient(180deg,rgba(18,25,24,.38),rgba(47,30,16,.7));backdrop-filter:blur(calc(42 * var(--u)))}.finner{position:relative;left:50%;width:var(--frame);height:100%;transform:translateX(-50%)}.brandrow{position:absolute;left:calc(26.6 * var(--u));top:calc(35 * var(--u));display:flex;align-items:center;gap:calc(11 * var(--u))}.mark{width:calc(25 * var(--u));height:calc(25 * var(--u));color:#fff}.wordmark{font-family:var(--display);font-size:calc(24 * var(--u));letter-spacing:calc(.28 * var(--u));white-space:nowrap}.tagline{position:absolute;left:calc(26.6 * var(--u));top:calc(74 * var(--u));width:calc(300 * var(--u));margin:0;color:rgba(255,255,255,.7);font-size:calc(13.5 * var(--u));font-weight:500;line-height:1.3}.nav{position:absolute;top:calc(37 * var(--u));right:calc(26 * var(--u));display:grid;grid-template-columns:repeat(3,calc(210 * var(--u)));gap:calc(35 * var(--u))}.col h2{margin:0;color:rgba(255,255,255,.86);font-size:calc(15.8 * var(--u));font-weight:500;letter-spacing:calc(.18 * var(--u))}.col ul{display:grid;gap:calc(3 * var(--u));padding:calc(26 * var(--u)) 0 0;margin:0;list-style:none}.col a{font-size:calc(14.4 * var(--u));line-height:1.55;white-space:nowrap;transition:opacity .2s}.col a:hover,.socials a:hover{opacity:.62}.rule{position:absolute;left:calc(26.6 * var(--u));top:calc(207 * var(--u));width:calc(1547 * var(--u));height:max(1px,calc(1 * var(--u)));background:rgba(255,255,255,.4)}.footrow{position:absolute;right:calc(26.6 * var(--u));bottom:calc(37 * var(--u));left:calc(26.6 * var(--u));display:flex;align-items:center;justify-content:space-between}.legal{margin:0;color:rgba(255,255,255,.68);font-size:calc(13.5 * var(--u));font-weight:500}.socials{display:flex;gap:calc(27 * var(--u))}.socials a{display:inline-flex;align-items:center;gap:calc(7 * var(--u));font-size:calc(12 * var(--u));font-weight:600;transition:opacity .2s}.socials svg{width:calc(17 * var(--u));height:calc(17 * var(--u));fill:none;stroke:currentColor;stroke-width:1.8}
+    .js-enter .eyebrow,.js-enter .lede,.js-enter .cta,.js-enter .brandrow,.js-enter .tagline,.js-enter .col,.js-enter .legal,.js-enter .socials a{opacity:0}.js-enter h1{clip-path:inset(-30% -8% 0 -3%);transform:translateY(110%)}.js-enter .rule{transform:scaleX(0);transform-origin:left center}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}.js-enter .eyebrow,.js-enter .lede,.js-enter .cta,.js-enter .brandrow,.js-enter .tagline,.js-enter .col,.js-enter .legal,.js-enter .socials a{opacity:1}.js-enter h1,.js-enter .rule{clip-path:none;transform:none}}
+    @media(max-aspect-ratio:5/4){:root{--u:calc(100vw / 780)}html,body{overflow:auto;min-height:100%}.viewport{position:relative;min-height:100dvh;overflow:hidden}.bg img{object-position:72% bottom}.bg::after{background:linear-gradient(180deg,rgba(6,22,34,.5),rgba(6,22,34,.12) 58%,rgba(6,22,34,.5))}.stage{position:relative;left:0;width:100%;height:auto;min-height:100dvh;transform:none}.hero{position:relative;left:auto;top:auto;width:auto;padding:clamp(30px,7vh,72px) var(--pad,22px) 165px;transform:none}.eyebrow{font-size:clamp(10.5px,2.9vw,15px);letter-spacing:.09em}h1{max-width:14ch;font-size:clamp(42px,11vw,76px);line-height:1}.lede{max-width:38ch;font-size:clamp(14.5px,3.9vw,18px)}.cta{min-width:145px;height:48px;font-size:14px}.footer{position:relative;height:auto;min-height:340px;padding:24px var(--pad,22px) 26px;backdrop-filter:blur(28px)}.finner{position:static;width:auto;height:auto;transform:none}.brandrow,.tagline,.nav,.rule,.footrow{position:static}.brandrow{gap:10px}.mark{width:25px;height:25px}.wordmark{font-size:24px}.tagline{width:min(300px,85vw);margin-top:12px;font-size:13.5px}.nav{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:32px}.col h2{font-size:13px}.col ul{padding-top:14px}.col a{font-size:12px;line-height:1.9;white-space:normal}.rule{display:block;width:100%;height:1px;margin-top:26px}.footrow{flex-wrap:wrap;gap:18px;margin-top:23px}.legal{font-size:11px}.socials{gap:18px}.socials a{font-size:11px}}
+    @media(max-width:500px){:root{--pad:19px}.nav{grid-template-columns:repeat(2,minmax(0,1fr))}.col:last-child{grid-column:1/-1}}
+  </style>
+  <script>if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('js-enter');</script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="viewport"><div class="bg" aria-hidden="true"><img src="dist/hero.png" alt="" /></div><div class="sound-field" aria-hidden="true"><span></span><span></span><span></span></div>
+    <main class="stage" id="conteudo">
+      <section class="hero" aria-labelledby="titulo"><p class="eyebrow">Comunicação com mais presença</p><h1 id="titulo">Cada voz merece <em>espaço.</em></h1><p class="lede">Um cuidado fonoaudiológico próximo, individual e construído a partir da história de cada pessoa.</p><a class="cta" href="#agendamento">Quero conversar <span aria-hidden="true">↗</span></a></section>
+      <footer class="footer" id="agendamento"><div class="finner"><div class="brandrow"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><path fill="currentColor" d="M20 1C22.4 12.8 27.2 17.6 39 20 27.2 22.4 22.4 27.2 1 20 12.8 17.6 17.6 12.8 20 1Z"/><path fill="currentColor" d="M20 7c1.4 8.2 4.8 11.6 13 13-8.2 1.4-11.6 4.8-13 13-1.4-8.2-4.8-11.6-13-13 8.2-1.4 11.6-4.8 13-13Z"/></svg><span class="wordmark">Fala Viva</span></div><p class="tagline">Cuidado fonoaudiológico para falar, ouvir, interagir e participar do próprio jeito.</p><nav class="nav" aria-label="Informações da clínica"><div class="col"><h2>CUIDADO</h2><ul><li><a href="#agendamento">Fala e linguagem</a></li><li><a href="#agendamento">Voz e fluência</a></li><li><a href="#agendamento">Comunicação cotidiana</a></li><li><a href="#agendamento">Orientação familiar</a></li></ul></div><div class="col"><h2>CLÍNICA</h2><ul><li><a href="#agendamento">Primeira conversa</a></li><li><a href="#agendamento">Avaliação individual</a></li><li><a href="#agendamento">Atendimento presencial</a></li><li><a href="#agendamento">Atendimento on-line</a></li></ul></div><div class="col"><h2>INFORMAÇÕES</h2><ul><li><a href="#agendamento">Dúvidas frequentes</a></li><li><a href="#agendamento">Como funciona</a></li><li><a href="#agendamento">Para quem é</a></li><li><a href="#agendamento">Agendamento</a></li></ul></div></nav><div class="rule"></div><div class="footrow"><p class="legal">© 2025 Fala Viva — todos os direitos reservados.</p><div class="socials"><a href="#agendamento" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".7" fill="currentColor" stroke="none"/></svg>Instagram</a><a href="#agendamento" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.6-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.3 2.2 2.1 4.1 4.3 4.5l1.2-1.1 1.8.8c-.5 1.6-2.2 2-3.5 1.4-2.8-1.2-4.9-3.3-6.1-6.1-.6-1.3-.2-3 1.4-3.5l.8 1.8L9 8.5Z"/></svg>WhatsApp</a><a href="mailto:contato@falaviva.com.br" aria-label="E-mail">E-mail</a></div></div></div></footer>
     </main>
-
-    <footer class="site-footer section-shell">
-      <a class="brand" href="#inicio" aria-label="Voltar ao início">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.5 8.5h15.2c4.3 0 7.8 3.5 7.8 7.8v2.4c0 4.3-3.5 7.8-7.8 7.8H18l-6.9 5.2.9-5.2H9.5a7.8 7.8 0 0 1-7.8-7.8v-2.4c0-4.3 3.5-7.8 7.8-7.8Z" fill="currentColor" />
-            <path d="M11.4 16.4c1.7-1.8 3.6-1.8 5.5 0 1.7 1.7 3.4 1.7 5.1 0 1.8-1.8 3.8-1.8 5.6 0" stroke="#F5F3EE" stroke-width="2.2" stroke-linecap="round" />
-          </svg>
-        </span>
-        <span class="brand-type"><strong>Fala Viva</strong><small>fonoaudiologia</small></span>
-      </a>
-      <p>Um espaço para cada voz.</p>
-      <div class="footer-bottom"><span>© <span data-year></span> Fala Viva</span><span>Site demonstrativo — personalize os dados da clínica</span><a href="#inicio">Voltar ao topo ↑</a></div>
-    </footer>
-  </body>
+  </div>
+  <script>
+    (()=>{const reduced=matchMedia('(prefers-reduced-motion: reduce)'),root=document.documentElement;let frame=0;const clamp=(n,a,b)=>Math.min(Math.max(n,a),b),update=()=>{frame=0;if(reduced.matches)return;root.style.setProperty('--scroll-progress',clamp(scrollY/Math.max(innerHeight*1.15,1),0,1).toFixed(3))},request=()=>{if(!frame)frame=requestAnimationFrame(update)};addEventListener('scroll',request,{passive:true});addEventListener('resize',request,{passive:true});update();if(!reduced.matches){const ease='cubic-bezier(.16,1,.3,1)',animate=(selector,delay)=>document.querySelectorAll(selector).forEach((el,i)=>el.animate([{opacity:0,transform:'translateY(14px)'},{opacity:1,transform:'translateY(0)'}],{duration:620,delay:delay+i*65,easing:ease,fill:'both'}));animate('.eyebrow,.lede,.cta,.brandrow,.tagline,.col,.legal,.socials a',80);document.querySelector('h1')?.animate([{transform:'translateY(110%)'},{transform:'translateY(0)'}],{duration:980,delay:150,easing:ease,fill:'both'});setTimeout(()=>document.documentElement.classList.remove('js-enter'),1900)}})();
+  </script>
+</body>
 </html>
