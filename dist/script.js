@@ -1,6 +1,36 @@
 const header = document.querySelector("[data-header]");
 const menuToggle = document.querySelector(".menu-toggle");
 const mobileNav = document.querySelector("#mobile-nav");
+const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+let motionFrame = 0;
+
+const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+
+const updateDepth = () => {
+  motionFrame = 0;
+  if (motionQuery.matches) return;
+
+  const scrollY = window.scrollY;
+  const heroProgress = clamp(scrollY / Math.max(window.innerHeight * 1.15, 1), 0, 1);
+  document.documentElement.style.setProperty("--scroll-y", String(scrollY));
+  document.documentElement.style.setProperty("--scroll-progress", heroProgress.toFixed(3));
+
+  document.querySelectorAll(".approach-visual, .care-grid, .quote-inner").forEach((element) => {
+    const rect = element.getBoundingClientRect();
+    const progress = clamp((window.innerHeight * 0.82 - rect.top) / (window.innerHeight * 0.95), 0, 1);
+    element.style.setProperty("--section-progress", progress.toFixed(3));
+  });
+};
+
+const requestDepthUpdate = () => {
+  if (motionFrame) return;
+  motionFrame = window.requestAnimationFrame(updateDepth);
+};
+
+updateDepth();
+window.addEventListener("scroll", requestDepthUpdate, { passive: true });
+window.addEventListener("resize", requestDepthUpdate, { passive: true });
+motionQuery.addEventListener?.("change", requestDepthUpdate);
 
 const setHeaderState = () => {
   header?.classList.toggle("is-scrolled", window.scrollY > 12);
